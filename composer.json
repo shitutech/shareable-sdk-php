@@ -1,0 +1,28 @@
+{
+    "name": "shitutech/shareable",
+    "description": "分账 SDK for PHP",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Shitutech\\Shareable\\": "src/"
+        }
+    },
+    "license": "MIT",
+    "require": {
+        "php": ">=7.2",
+        "ext-curl": "*",
+        "ext-json": "*",
+        "ext-mbstring": "*",
+        "ext-openssl": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "*"
+    },
+    "config": {
+        "sort-packages": true,
+        "preferred-install": "auto",
+        "optimize-autoloader": true
+    },
+    "prefer-stable": true,
+    "minimum-stability": "dev"
+}
