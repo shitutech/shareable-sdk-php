@@ -4,7 +4,7 @@ namespace Shitutech\Shareable\Modules\Responses;
 
 use Shitutech\Shareable\Modules\Base\BaseResponse;
 
-class BindResponse extends BaseResponse
+class UnbindResponse extends BaseResponse
 {
     /**
      * @var string 收单商户号
@@ -49,5 +49,4 @@ class BindResponse extends BaseResponse
 
         return $decode;
     }
-
 }

@@ -4,7 +4,7 @@ namespace Shitutech\Shareable\Modules\Requests;
 
 use Shitutech\Shareable\Modules\Base\BaseRequest;
 
-class BindRequest extends BaseRequest
+class UnbindRequest extends BaseRequest
 {
     /**
      * @var string 收单商户号
@@ -18,14 +18,14 @@ class BindRequest extends BaseRequest
 
     public function getApiPath(): string
     {
-        return '/api/sharing/receiver/bind';
+        return '/api/sharing/receiver/unbind';
     }
 
     /**
      * @param string $mchId
-     * @return BindRequest
+     * @return UnbindRequest
      */
-    public function setMchId(string $mchId): BindRequest
+    public function setMchId(string $mchId): UnbindRequest
     {
         $this->mchId = trim($mchId);
         return $this;
@@ -33,9 +33,9 @@ class BindRequest extends BaseRequest
 
     /**
      * @param string $receiver
-     * @return BindRequest
+     * @return UnbindRequest
      */
-    public function setReceiver(string $receiver): BindRequest
+    public function setReceiver(string $receiver): UnbindRequest
     {
         $this->receiver = trim($receiver);
         return $this;
