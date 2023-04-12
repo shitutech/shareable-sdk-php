@@ -10,7 +10,7 @@
 
 ```json
 {
-  "minimum-stability": "dev",
+  "minimum-stability": "stable",
   "repositories": [
     {
       "type": "vcs",
